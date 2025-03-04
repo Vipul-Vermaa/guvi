@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub UI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #bdc1bba7;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #2f4531e7;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 60px;
+        }
+        .sidebar {
+            width: 250px;
+            height: 550px;
+            background-color: #151618d6;
+            border-radius: 12px;
+        }
+        .content-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .search-bar {
+            width: 60%;
+            height: 40px;
+            background-color: #151618d6;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(198, 193, 193);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            width: 90%;
+            align-items: center;
+        }
+        .top-row {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .card {
+            height: 200px;
+            background-color: #151618d6;
+            border-radius: 12px;
+            flex-grow: 1;
+        }
+        .wide-card {
+            height: 150px;
+            width: 100%;
+            background-color: #151618d6;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">GITHUB</div>
+    <div class="container">
+        <div class="sidebar-container">
+            <div class="sidebar"></div>
+        </div>
+        <div class="content-container">
+            <div class="search-bar">Search</div>
+            <div class="cards">
+                <div class="top-row">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+                <div class="wide-card"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
